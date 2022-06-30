@@ -2,13 +2,16 @@
 
 // import type { NextPage } from 'next'
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 const Resource = ({ records }) => {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Resources</title>
+        <meta name="description" content="Handpicked from the Internet" />
+      </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>naeRaste │ ✍️</h1>
         <p>Video resources from around the 🌏</p>

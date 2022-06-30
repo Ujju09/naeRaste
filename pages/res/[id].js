@@ -2,10 +2,14 @@
 
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function Resource({ records }) {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>{records.fields["Chapter Name"]}</title>
+      </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>naeRaste │ ✍️</h1>
         <p

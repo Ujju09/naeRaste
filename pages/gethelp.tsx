@@ -9,6 +9,10 @@ const Help: NextPage = () => {
     const encoded = encodeURI(helpText)
     return (
         <div className={styles.container}>
+            <Head>
+                <title>Stuck 🫣</title>
+                <meta name="description" content="Superpowered notebooks" />
+            </Head>
             <main className={styles.main}>
             <h1 className={styles.title}>
          naeRaste │ 🤝
