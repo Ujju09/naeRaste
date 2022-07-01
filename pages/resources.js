@@ -11,6 +11,7 @@ const Resource = ({ records }) => {
       <Head>
         <title>🚀 Resources</title>
         <meta name="description" content="Handpicked from the Internet" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>naeRaste │ ✍️</h1>

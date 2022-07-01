@@ -9,6 +9,7 @@ export default function Resource({ records }) {
     <div className={styles.container}>
       <Head>
         <title>{records.fields["Chapter Name"]}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>naeRaste │ ✍️</h1>
