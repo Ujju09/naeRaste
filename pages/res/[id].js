@@ -5,7 +5,6 @@ import Image from "next/image";
 import Head from "next/head";
 
 export default function Resource({ records }) {
-  console.log(process.env.API_KEY);
   return (
     <div className={styles.container}>
       <Head>
@@ -64,9 +63,10 @@ export default function Resource({ records }) {
 export async function getServerSideProps(context) {
   const { id } = context.query;
   const PUBLIC_API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+  const TABLE_KEY = process.env.TABLE_KEY;
 
   const res = await fetch(
-    `https://api.airtable.com/v0/appL3eEYotbT6ZB0m/Links%20and%20description/${id}`,
+    `https://api.airtable.com/v0/${TABLE_KEY}/Links%20and%20description/${id}`,
     {
       headers: { Authorization: `Bearer ${PUBLIC_API_KEY}` },
     }
