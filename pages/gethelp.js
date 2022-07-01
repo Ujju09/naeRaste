@@ -4,7 +4,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 const Help = ({ records }) => {
-  const helpText = "Do you need help with Maths? Ask here!";
+  const helpText = "Can you help me out?";
   const encoded = encodeURI(helpText);
 
   return (

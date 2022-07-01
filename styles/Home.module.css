@@ -46,7 +46,7 @@
 .title {
   margin: 0;
   line-height: 2;
-  font-size: 3rem;
+  font-size: 2rem;
 
   width: 100vw;
   background-color: #1B3EA8;
@@ -141,3 +141,4 @@
     height: 200px;
   }
 }
+

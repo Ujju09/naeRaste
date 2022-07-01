@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <Link href= "/resources" >
             <a className={styles.card}>
-            <Image src="/learn.svg" alt="Next.js" width={200} height={200} />
+            <Image src="/learn.svg" alt="Next.js" width={200} height={200}  priority/>
 
             <h3 style={{
               color:'#5967E5'
