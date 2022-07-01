@@ -21,7 +21,7 @@ const Resource = ({ records }) => {
             <Link
               key={index}
               href={{
-                pathname: "/res/[id]",
+                pathname: "/subject",
                 query: {
                   id: record.id,
                 },

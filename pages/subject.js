@@ -1,6 +1,6 @@
 /** @format */
 
-import styles from "../../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -63,10 +63,9 @@ export default function Resource({ records }) {
 export async function getServerSideProps(context) {
   const { id } = context.query;
   const PUBLIC_API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-  const TABLE_KEY = process.env.TABLE_KEY;
 
   const res = await fetch(
-    `https://api.airtable.com/v0/${TABLE_KEY}/Links%20and%20description/${id}`,
+    `https://api.airtable.com/v0/appL3eEYotbT6ZB0m/Links%20and%20description/${id}`,
     {
       headers: { Authorization: `Bearer ${PUBLIC_API_KEY}` },
     }
@@ -75,6 +74,6 @@ export async function getServerSideProps(context) {
   const records = await res.json();
 
   return {
-    props: { records: records.records }, // will be passed to the page component as props
+    props: { records: records }, // will be passed to the page component as props
   };
 }
