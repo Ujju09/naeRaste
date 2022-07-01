@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             }}>Be better blog &rarr;</h3>
             </a>
           </Link>
-          <Link href="/404" >
+          <Link href="/exams" >
             <a className={styles.card}>
             <Image src="/exams.svg" alt="Exmas" width={200} height={200} />
             <h3 style={{
@@ -58,12 +58,10 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-       
         
           <span className={styles.logo}>
-            <Image src="/art.svg" alt="Vercel Logo" width={100} height={100} />
+            <Image src="/art.svg" alt="Vercel Logo" width={60} height={60} />
           </span>
-        
       </footer>
     </div>
   )

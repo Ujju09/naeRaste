@@ -9,7 +9,7 @@ const Resource = ({ records }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Resources</title>
+        <title>🚀 Resources</title>
         <meta name="description" content="Handpicked from the Internet" />
       </Head>
       <main className={styles.main}>
