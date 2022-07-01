@@ -41,10 +41,12 @@ const Resource = ({ records }) => {
 //Get server props is dope!!
 
 export async function getStaticProps() {
+  const API_KEY = process.env.API_KEY;
+  const TABLE_KEY = process.env.TABLE_KEY;
   const res = await fetch(
-    "https://api.airtable.com/v0/appL3eEYotbT6ZB0m/Links%20and%20description?maxRecords=15&view=Grid%20view",
+    `https://api.airtable.com/v0/${TABLE_KEY}/Links%20and%20description?maxRecords=15&view=Grid%20view`,
     {
-      headers: { Authorization: "Bearer key9RtFoRjkES73c1" },
+      headers: { Authorization: `Bearer ${API_KEY}` },
     }
   );
 
