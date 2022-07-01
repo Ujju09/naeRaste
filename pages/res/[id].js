@@ -75,6 +75,6 @@ export async function getServerSideProps(context) {
   const records = await res.json();
 
   return {
-    props: { records: records }, // will be passed to the page component as props
+    props: { records: records.records }, // will be passed to the page component as props
   };
 }
