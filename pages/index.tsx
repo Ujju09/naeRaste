@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <Link href= "/resources" >
             <a className={styles.card}>
-            <Image src="/learn.svg" alt="Next.js" width={200} height={200}  priority/>
+            <Image src="/learn.svg" alt="LEarning resources" width={200} height={200}  priority/>
 
             <h3 style={{
               color:'#5967E5'
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           </Link>
           <Link href="/gethelp" className={styles.card}>
             <a className={styles.card}>
-            <Image src="/support.svg" alt="Next.js" width={200} height={200} />
+            <Image src="/support.svg" alt="Support" width={200} height={200} />
             <h3  style={{
               color: '#D05E70',
             }}>Stuck ? Ask here &rarr;</h3>
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           </Link>
           <Link href="/bebetter" >
             <a className={styles.card}>
-            <Image src="/blog.svg" alt="Next.js" width={200} height={200} />
+            <Image src="/blog.svg" alt="Blogs" width={200} height={200} />
             <h3 style={{
               color: 'green',
             }}>Be better blog &rarr;</h3>
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           </Link>
           <Link href="/exams" >
             <a className={styles.card}>
-            <Image src="/exams.svg" alt="Exmas" width={200} height={200} />
+            <Image src="/exams.svg" alt="Exams" width={200} height={200} />
             <h3 style={{
               color: 'purple',
             }}>What we all hate &rarr;</h3>
@@ -59,10 +59,7 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        
-          <span className={styles.logo}>
-            <Image src="/art.svg" alt="Vercel Logo" width={60} height={60} />
-          </span>
+          <span className={styles.logo}> <Image src="/art.svg" alt="naeRaste" width={60} height={60} /> </span>       
       </footer>
     </div>
   )
