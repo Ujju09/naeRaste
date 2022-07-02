@@ -12,11 +12,14 @@ const Home: NextPage = () => {
         <meta name="description" content="Superpowered notebooks" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-         naeRaste
+         naeRaste │
+         नए रास्ते
+        
         </h1>
 
         <p className={styles.description}>
@@ -45,6 +48,14 @@ const Home: NextPage = () => {
             <h3 style={{
               color: 'green',
             }}>Be better blog &rarr;</h3>
+            </a>
+          </Link>
+          <Link href="/booksforyou" >
+            <a className={styles.card}>
+            <Image src="/book.svg" alt="Blogs" width={200} height={200} />
+            <h3 style={{
+              color: 'orange',
+            }}>The missing school &rarr;</h3>
             </a>
           </Link>
           <Link href="/exams" >

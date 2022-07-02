@@ -91,13 +91,7 @@ export default function Newsletter() {
           <input
             type="text"
             placeholder="Your name"
-            style={{
-              borderBottom: "1px solid #D05E70",
-              borderRadius: "15px",
-              width: "80%",
-              padding: "1rem",
-              fontSize: "1.2rem",
-            }}
+            className={styles.input}
             value={formData.fullname}
             name="fullname"
             onChange={handleChange}
@@ -106,20 +100,20 @@ export default function Newsletter() {
             type="text"
             placeholder="Your email"
             name="email"
-            style={{
-              borderBottom: "1px solid #D05E70",
-              borderRadius: "15px",
-              width: "80%",
-              padding: "1rem",
-              fontSize: "1.2rem",
-              marginBottom: "1rem",
-            }}
+            className={styles.input}
             value={formData.email}
             onChange={handleChange}
           />
-          <button className={styles.button} onClick={handleSubmit}>
-            {loading}
-          </button>
+          <div
+            style={{
+              display: "flex",
+              flex: "1",
+            }}
+          >
+            <button className={styles.button} onClick={handleSubmit}>
+              {loading}
+            </button>
+          </div>
         </div>
       )}
     </footer>
