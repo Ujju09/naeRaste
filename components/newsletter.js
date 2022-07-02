@@ -85,7 +85,7 @@ export default function Newsletter() {
               textAlign: "center",
             }}
           >
-            Your email will provide us a way to reach you with updates. Beleive
+            Your email will provide us a way to reach you with updates. Believe
             us it will get better.
           </p>
           <input
