@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Newsletter from '../components/Newsletter'
+import Newsletter from '../components/newsletter'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
