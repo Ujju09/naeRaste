@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Newsletter from '../components/Newsletter'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -48,7 +49,7 @@ const Home: NextPage = () => {
           </Link>
           <Link href="/exams" >
             <a className={styles.card}>
-            <Image src="/exams.svg" alt="Exams" width={200} height={200} />
+            <Image src="/exams.svg" alt="Exams" width={200} height={200}/>
             <h3 style={{
               color: 'purple',
             }}>What we all hate &rarr;</h3>
@@ -58,9 +59,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-          <span className={styles.logo}> <Image src="/art.svg" alt="naeRaste" width={60} height={60} /> </span>       
-      </footer>
+      <Newsletter />
     </div>
   )
 }
