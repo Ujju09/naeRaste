@@ -15,38 +15,45 @@ export default function BooksForYou({ records }) {
       <main className={styles.main}>
         <h1 className={styles.title}>Books For You</h1>
         <p>Obviously they don&apos;t teach you this at school.</p>
-        <div className={styles.gridcal}>
+        <div className={styles.grid}>
           {records.map((record, index) => (
-            <a
-              href={record.fields["buylink"]}
-              style={{
-                textDecoration: "none",
-              }}
-              key={index}
-            >
-              <Image
-                src={record.fields["Url"]}
-                alt={record.fields["Title"]}
-                width={200}
-                height={300}
-              />
-              <h3
+            <div className={styles.card} key={index}>
+              <a
+                href={record.fields["buylink"]}
                 style={{
-                  textOverflow: "ellipsis",
+                  textDecoration: "none",
+                  padding: "0.5rem",
+                  alignContent: "center",
                 }}
               >
-                {record.fields["Title"]}
-              </h3>
-              <p
-                style={{
-                  fontSize: "0.8rem",
-                  color: "grey",
-                  textOverflow: "ellipsis",
-                }}
-              >
-                {record.fields["Author"]}
-              </p>
-            </a>
+                <Image
+                  src={record.fields["Url"]}
+                  alt={record.fields["Title"]}
+                  width={200}
+                  height={300}
+                />
+                <h3
+                  style={{
+                    textOverflow: "ellipsis",
+                    maxLines: 1,
+                    overflow: "hidden",
+                    wordWrap: "break-word",
+                  }}
+                >
+                  {record.fields["Title"]}
+                </h3>
+                <p
+                  style={{
+                    fontSize: "0.8rem",
+                    color: "grey",
+                    textOverflow: "ellipsis",
+                    maxLines: 1,
+                  }}
+                >
+                  {record.fields["Author"]}
+                </p>
+              </a>
+            </div>
           ))}
         </div>
       </main>
