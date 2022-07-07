@@ -49,27 +49,6 @@ export default function BooksForYou({ records }) {
             </a>
           ))}
         </div>
-        <orbit-reviewarea
-          color="blue"
-          style={{
-            width: "100%",
-            padding: "1rem",
-          }}
-        >
-          <orbit-prompt
-            question="What's the working name for Andy's experimental mnemonic medium platform?"
-            answer="Orbit"
-          ></orbit-prompt>
-          <orbit-prompt
-            question="What kind of quantum gate is this?"
-            question-attachments="https://docs.withorbit.com/toffoli.png"
-            answer="A Toffoli gate."
-          ></orbit-prompt>
-          <orbit-prompt
-            question="Given a right triangle with legs of length $a$ and $b$, what is the length of hypotenuse $c$?"
-            answer="$$c = \sqrt{a^2 + b^2}$$"
-          ></orbit-prompt>
-        </orbit-reviewarea>
       </main>
     </div>
   );
@@ -79,7 +58,7 @@ export async function getStaticProps() {
   const API_KEY = process.env.API_KEY;
   const TABLE_KEY = process.env.TABLE_KEY;
   const res = await fetch(
-    `https://api.airtable.com/v0/${TABLE_KEY}/Books?maxRecords=3&view=Grid%20view`,
+    `https://api.airtable.com/v0/${TABLE_KEY}/Books?maxRecords=20&view=Grid%20view`,
     {
       headers: { Authorization: `Bearer ${API_KEY}` },
     }
