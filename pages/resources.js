@@ -24,7 +24,7 @@ const Resource = ({ records }) => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>naeRaste │ ✍️</h1>
-        <p>Video resources from around the 🌏</p>
+        <p>Learning resources from around the world!</p>
         <div className={styles.grid}>
           {gradefilteredRecords.map((record, index) => (
             <Link
@@ -36,9 +36,7 @@ const Resource = ({ records }) => {
                 },
               }}
             >
-              <div className={styles.card}>
-                {record.fields["Chapter Name"]} &rarr;
-              </div>
+              <div className={styles.card}>{record.fields["Chapter Name"]}</div>
             </Link>
           ))}
         </div>

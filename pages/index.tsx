@@ -63,45 +63,38 @@ const Home: NextPage = () => {
             
           } >
             <a className={styles.card}>
-            <Image src="/learn.svg" alt="Learning resources" width={200} height={200}  priority/>
+            <Image src="/learn.svg" alt="Learning resources" width={80} height={80}  priority/>
 
             <h3 style={{
               color:'#5967E5'
-            }}>Get better at Maths &rarr;</h3>
+            }}>Maths Resources</h3>
             </a>
           </Link>
           <Link href="/gethelp" className={styles.card}>
             <a className={styles.card}>
-            <Image src="/support.svg" alt="Support" width={200} height={200} />
+            <Image src="/support.svg" alt="Support" width={100} height={100} />
             <h3  style={{
               color: '#D05E70',
-            }}>Stuck ? Ask here &rarr;</h3>
+            }}>Stuck ? Ask here</h3>
             </a>
           </Link>
           <Link href="/bebetter" >
             <a className={styles.card}>
-            <Image src="/blog.svg" alt="Blogs" width={200} height={200} />
+            <Image src="/blog.svg" alt="Blogs" width={100} height={100} />
             <h3 style={{
               color: 'green',
-            }}>Be better blog &rarr;</h3>
+            }}>Be better blog</h3>
             </a>
           </Link>
           <Link href="/booksforyou" >
             <a className={styles.card}>
-            <Image src="/book.svg" alt="Blogs" width={200} height={200} />
+            <Image src="/book.svg" alt="Blogs" width={100} height={80} />
             <h3 style={{
               color: 'orange',
-            }}>The missing school &rarr;</h3>
+            }}>The missing school</h3>
             </a>
           </Link>
-          <Link href="/exams" >
-            <a className={styles.card}>
-            <Image src="/exams.svg" alt="Exams" width={200} height={200}/>
-            <h3 style={{
-              color: 'purple',
-            }}>What we all hate &rarr;</h3>
-            </a>
-          </Link>
+          
           
         </div>
       </main>

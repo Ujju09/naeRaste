@@ -3,6 +3,7 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Resource({ records }) {
   return (
@@ -25,6 +26,21 @@ export default function Resource({ records }) {
         >
           {records.fields["Chapter Name"]}
         </p>
+        {records.fields.hasOwnProperty("practiceOnKhanAcademy") === true ? (
+          <Link href={records.fields["practiceOnKhanAcademy"]}>
+            <div className={styles.practiceCard}>
+              <Image
+                src="/KhanSVG.svg"
+                width={50}
+                height={50}
+                alt="Khan Academy Logo"
+              />
+              <p> Practice on Khan Academy</p>
+            </div>
+          </Link>
+        ) : (
+          <></>
+        )}
 
         <div className={styles.grid}>
           {records.fields.hasOwnProperty("Url") === false ? (
