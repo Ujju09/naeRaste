@@ -14,6 +14,7 @@ export default function BooksForYou({ records }) {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Books For You</h1>
+
         <p>Obviously they don&apos;t teach you this at school.</p>
         <div className={styles.grid}>
           {records.map((record, index) => (

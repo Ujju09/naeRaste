@@ -30,7 +30,7 @@ const Help = ({ records }) => {
           {records.map((record, index) => (
             <a
               key={index}
-              className={styles.card}
+              className={styles.helpcard}
               href={`https://wa.me/91${record.fields["Phone"]}?text=${encoded}`}
             >
               <h3>{record.fields["Name"]} &rarr;</h3>
