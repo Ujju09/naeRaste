@@ -26,19 +26,18 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Maths <br/><span>
-          <label> Select your class </label>  
+          maths <br/><span>
+          <label>select your class </label>  
             <select style={{
               width: '100px',
               height: '40px',
-              borderRadius: '40px',
+              borderRadius: '10px',
               border: '1px solid #ccc',
               padding: '5px',
               fontSize: '1.5rem',
-              
-              color: 'white',
-              backgroundColor: "#8EC5FC", 
-              backgroundImage: "linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%)",
+              color: 'black',
+              backgroundColor: "#f5f5f5",
+             
 
             }} onChange={
               (e) => {
