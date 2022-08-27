@@ -3,8 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Newsletter from '../components/newsletter'
-import { useState } from 'react'
+// import Newsletter from '../components/newsletter'
+
+import Script from 'next/script'
 const Home: NextPage = () => {
 
   
@@ -63,7 +64,12 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <Newsletter />
+      {/* <Newsletter /> */}
+     
+      
+     
+      <Script async data-uid="37bab4a468" src="https://artisanal-producer-6695.ck.page/37bab4a468/index.js"></Script>
+     
     </div>
   )
 }
