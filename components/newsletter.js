@@ -116,6 +116,7 @@ export default function Newsletter() {
           </div>
         </div>
       )}
+      Crafted with ❤️
     </footer>
   );
 }

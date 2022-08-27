@@ -7,12 +7,11 @@ import Newsletter from '../components/newsletter'
 import { useState } from 'react'
 const Home: NextPage = () => {
 
-  const grades = [9,10,11,12];
-  const [grade, setGrade] = useState(9);
+  
   return (
     <div className={styles.container}>
       <Head>
-        <title>naeRaste</title>
+        <title>nae raste</title>
         <meta name="description" content="Superpowered notebooks" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest"/>
@@ -21,78 +20,44 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-         naeRaste │ नए रास्ते
+         nae raste │ नए रास्ते
         
         </h1>
-
-        <p className={styles.description}>
-          maths <br/><span>
-          <label>select your class </label>  
-            <select style={{
-              width: '100px',
-              height: '40px',
-              borderRadius: '10px',
-              border: '1px solid #ccc',
-              padding: '5px',
-              fontSize: '1.5rem',
-              color: 'black',
-              backgroundColor: "#f5f5f5",
-             
-
-            }} onChange={
-              (e) => {
-                setGrade(parseInt(e.target.value));
-              }
-
-            }
-            defaultValue={grade}>
+        <div style={{
+          padding: '1rem',
+        }}>
+          <Image src="/banner.png" alt="notebook" width={428} height={234} />
+        </div>
+        <div style={{
+          padding: '1rem',
+          fontSize: '1.5rem',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            // alignItems: 'center',
+            flexDirection: 'row',
+            gap: '1rem',
+          }}
+          >
+            <Image src="/NLM1.png" alt="notebook" width={150} height={200} />
+            <Image src="/NLM2.png" alt="notebook" width={150} height={200} />
+           
+            <Image src="/Golden ratio.png" alt="notebook" width={150} height={200} />
+          </div>
+          <p>
+            Exercise notebooks.
+          </p>
+          <Image src="/arrow-6.svg" alt="notebook" width={428} height={234} />
+          Simple product - High impact 
+        </div>
+        <div >
           
-              {grades.map(grade => <option key={grade} value={grade}>{grade}</option>)}
-            </select>  
-          
-            </span></p>
-        <div className={styles.grid}>
-          <Link href= {
-            {
-              pathname: '/resources',
-              query: {
-                grade: grade
-              }
-            }
-            
-          } >
-            <a className={styles.card}>
-            <Image src="/learn.svg" alt="Learning resources" width={80} height={80}  priority/>
-
-            <h3 style={{
-              color:'#5967E5'
-            }}>Maths Resources</h3>
-            </a>
-          </Link>
-          <Link href="/gethelp" className={styles.card}>
-            <a className={styles.card}>
-            <Image src="/support.svg" alt="Support" width={100} height={100} />
-            <h3  style={{
-              color: '#D05E70',
-            }}>Stuck ? Ask here</h3>
-            </a>
-          </Link>
-          <Link href="/bebetter" >
-            <a className={styles.card}>
-            <Image src="/blog.svg" alt="Blogs" width={100} height={100} />
-            <h3 style={{
-              color: 'green',
-            }}>Be better blog</h3>
-            </a>
-          </Link>
-          <Link href="/booksforyou" >
-            <a className={styles.card}>
-            <Image src="/book.svg" alt="Blogs" width={100} height={80} />
-            <h3 style={{
-              color: 'orange',
-            }}>The missing school</h3>
-            </a>
-          </Link>
           
           
         </div>
@@ -104,3 +69,14 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+
+{/* <div style={{
+          backgroundColor: 'purple',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+      
+          <Image src="/Frame 4.png" alt="notebook" width={144} height={100} />
+        </div> */}
