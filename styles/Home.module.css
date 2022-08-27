@@ -215,6 +215,14 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", en
   border: white 1px solid;
 }
 
+.secondaryButton{
+  
+  color: #010101;
+  font-size: larger;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
 
 .input{
   border-radius: 40px;
