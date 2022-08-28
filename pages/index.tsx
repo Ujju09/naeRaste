@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           }}
           >
             <Image src="/NLM1.png" alt="notebook" width={200} height={250} />
-            <Image src="/NLM2.png" alt="notebook" width={200} height={250} />
+            <Image src="/nb2.png" alt="notebook" width={200} height={250} />
            
             <Image src="/Golden ratio.png" alt="notebook" width={200} height={250} />
           </div>
