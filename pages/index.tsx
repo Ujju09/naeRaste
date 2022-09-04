@@ -51,15 +51,29 @@ const Home: NextPage = () => {
           </div>
           <p style={{
             textAlign: "center",
+            fontWeight: '300',
           }}>
-            Exercise notebooks <br/>
-             Affordable, Accessible, Aspirational
-          </p>
+            Exercise notebooks <br/></p>
+            <p style={{
+            textAlign: "center",
+            fontWeight: '500',
+            color: '#002C70',
+            }}>
+            Affordable, Accessible, Aspirational
+            </p>
+             
+          
+          <Link href={`https://begin.naeraste.com/`}>
+          <div className={styles.button} >
+            Let&apos;s begin
+          </div>
+          </Link>
           <Image src="/arrow-6.svg" alt="notebook" width={150} height={150} />
           Simple product - High impact 
           <p style={{
             textAlign: 'center',
             padding: '1.5rem',
+            fontWeight: '300',
           }}>
             Every notebook is embedded with QR code that will unlock the best learning resources from around the world.<br />
             Which means it doesn&apos;t matter if you live in Delhi or a small town in Bihar. Everyone will be able to access these resources free of cost.
@@ -69,6 +83,7 @@ const Home: NextPage = () => {
             Let&apos;s begin
           </div>
           </Link>
+          
          
         </div>
         <div >  
@@ -94,6 +109,7 @@ const Home: NextPage = () => {
             </button>
           </div>
         </a>
+       
         
         
         <a href={`https://www.youtube.com/channel/UCGypumUZB0u4Q7Rno87DpZw`} style={{
