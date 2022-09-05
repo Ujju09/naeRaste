@@ -103,7 +103,8 @@ const Home: NextPage = () => {
           color:"black"
         }}>
         <div className={styles.card}>
-            Want to participate in research aimed to help you learn better?
+          <h3>Got mate</h3>
+            Participate in research aimed to help you learn better.
             <button className={styles.secondaryButton}>
             →
             </button>
