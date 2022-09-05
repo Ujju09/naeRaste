@@ -63,12 +63,12 @@ const Home: NextPage = () => {
             </p>
              
           
+          <Image src="/arrow-6.svg" alt="notebook" width={150} height={150} />
           <Link href={`https://begin.naeraste.com/`}>
           <div className={styles.button} >
             Let&apos;s begin
           </div>
           </Link>
-          <Image src="/arrow-6.svg" alt="notebook" width={150} height={150} />
           Simple product - High impact 
           <p style={{
             textAlign: 'center',
