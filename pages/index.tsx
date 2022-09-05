@@ -80,7 +80,7 @@ const Home: NextPage = () => {
           </p>
           <Link href={`https://begin.naeraste.com/`}>
           <div className={styles.button} >
-            Let&apos;s begin
+            Get Started
           </div>
           </Link>
           
@@ -103,10 +103,13 @@ const Home: NextPage = () => {
           color:"black"
         }}>
         <div className={styles.card}>
-          <h3>Got mate</h3>
-            Participate in research aimed to help you learn better.
+          <h2>Got mate</h2>
+            <p>
+            You get a chance to teach a student or learn from a senior. And obviously win rewards🎁
+            </p>
+              
             <button className={styles.secondaryButton}>
-            →
+              Participate
             </button>
           </div>
         </a>
@@ -118,9 +121,12 @@ const Home: NextPage = () => {
           color:"black"
         }}>
         <div className={styles.card}>
-            Go to our YouTube channel. We publish videos on learning and problem solving.
+            <Image src={"/YouTube.svg"} alt="youtube" width={140} height={140} />
+            <p>
+              Watch our videos to learn more about our work. We discuss learning and problem solving methods, and how to use them in your daily life.
+            </p>
             <button className={styles.secondaryButton}>
-            →
+            Let&apos;s watch
             </button>
           </div>
         </a>
