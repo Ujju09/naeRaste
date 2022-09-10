@@ -4,13 +4,63 @@
 
 .main {
   min-height: 100vh;
+  width: 50%;
   padding: 0rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin: auto;
   justify-content: flex-start;
   align-items: center;
   font-family: 'Lexend', monospace;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.row h1{
+  font-size: 2.5rem;
+ margin-left: 1rem;
+margin-top: 1rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+
+}
+
+.row p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+ 
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.subheader{
+  display: flex;
+  flex-direction: row;
+}
+
+.line{
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 0.5rem 0;
 }
 
 .footer {
@@ -175,6 +225,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", en
   height: 1em;
   margin-left: 0.5rem;
 }
+.subtitle{
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  width: 60%;
+}
 
 @media (max-width: 600px) {
   .grid {
@@ -197,30 +253,76 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", en
     width:100%;
     padding: 1.2rem;
   }
+  .subtitle{
+    width: 90%;
+  }
+  .main{
+    width: 100%;
+  }
 }
+
+
+
+
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+
+       
+
+
+      
 
          
 
 
 
+
+
+
 .button{
-  
-  background-color:#D05E70;
-  border-radius: 10px;
+  background-color:#000000;
+  border-radius: 8px;
   color: white;
-  padding: 0.75rem 1.25rem;
-  font-size: 1.2rem;
-  
+  padding: 0.75rem 1.75rem;
+  font-size: 1.4rem;
   font-weight: 500;
+  text-align: center;
   border: none;
   cursor: pointer;
   margin: 1rem;
+
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: #B04D4D;
+  background-color: #291a7a;
   border: white 1px solid;
 }
 
