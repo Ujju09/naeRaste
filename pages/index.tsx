@@ -113,7 +113,7 @@ const Home: NextPage = () => {
             
           </ul>
         </div>
-        <Script async data-uid="cad6bef98a" src="https://artisanal-producer-6695.ck.page/cad6bef98a/index.js"></Script>
+        <Script async data-uid="b3ea752d78" src="https://artisanal-producer-6695.ck.page/b3ea752d78/index.js"></Script>
       </footer>
      
     </div>
