@@ -6,6 +6,20 @@ import Link from 'next/link'
 import Image from 'next/image'
 const Home: NextPage = () => {
 
+  const capabilities = [
+    "Curated learning resources for your class",
+"Videos",
+"Practice tests",
+"Memory",
+"Peer-2-Peer tutoring",
+"Reserach informed learning methods",
+"Ask your doubts",
+"Book recommendations",
+"Assignment management templates",
+"Schedule templates",
+"Rewards for participation 🎁",
+  ];
+
   
   return (
     <div className={styles.container}>
@@ -16,47 +30,68 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
       </Head>
-
       <main className={styles.main}>
-      <Script async data-uid="963f67a16a" src="https://artisanal-producer-6695.ck.page/963f67a16a/index.js"></Script>
-
-        <div className={styles.row}>
-          <h1>
-            Empowering You
-          </h1>
-          <div className={styles.col}>
-            <div className={styles.subheader}>
-              <Image src="/icon-192.png" width={75} height={50} alt="1" />
-              <h2>nae raste</h2>
-            </div>
-          <div className={styles.line}>
-
-</div>
-            <p>
-            We are on a mission to empower students by matching them with great learning resources and technology.
-            </p>
-            <Link href={`https://begin.naeraste.com/`}>
-          <div className={styles.button} >
-            Let&apos;s begin
+        <div className={styles.nav}>
+          
+          <div className={styles.navdiv}>
+          <Image src="/icon-512.png" alt="nae raste" width={75} height={75} />
+          <h3>
+            nae raste
+          </h3> 
           </div>
-          </Link>
-            <div className={styles.line}>
-
-            </div>
-          </div>
+         
         </div>
-       
+        <div className={styles.firstcontact}>
+
+        <h1>
+          Your Superpowered Notebook
+        </h1>
+        <p>
+        All your learning needs are bundled together right into your notebook. All you need is just a scan.
+        </p>
+        <Link href={'https://begin.naeraste.com/'}>
+        <button className={styles.button}>
+          Get started
+        </button>
+        </Link>
+        
         
        
+        <div className={styles.card}>
+          <h2>
+            Designed for Action
+          </h2>
+          <p>
+          Every piece of informtion is put carefully. They are there to inform and inspire you about science and technology tools that you could use to improve, manage, test and share your learning.
+          </p>
+          <Image src={`/dfaction.png`} width={369} height={218} alt="Designed for Action" />
 
+        </div>
+        <div className={styles.card}>
+          <h2>
+            Gets better after scan
+          </h2>
+          <Image src={`/visual-qr-use.png`} width={362} height={206} alt="QR" />
+          <p>
+          Behind the QR scan lies the true powers of this notebook.
+          </p>
+          <ul className={styles.ul}>
+            {capabilities.map((c, index) => (
+              <li key={index} className ={styles.list}>
+                <p>
+                  {c}
+                </p>
+              </li>
+            ))}
+
+          </ul>
+          <p>
+            And much more...
+          </p>
+        </div>
+        </div>
+        
       </main>
-
-
-     
-      
-     
-      <footer className={styles.footer}>    
-      </footer>
      
     </div>
   )
