@@ -121,6 +121,37 @@
   text-align: start;
 }
 
+.footer{
+  grid-template-columns: 1fr;
+  font-family: 'Lexend', monospace;
+  padding: 0rem 2.25rem;
+ 
+  background-color: rgb(238, 238, 238);
+}
+
+
+
+.footerdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  width: 90%;
+}
+
+.footer ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer li{
+  margin: 0rem 0.5rem;
+}
+
+
 
 
 /* 16px = 1rem */
