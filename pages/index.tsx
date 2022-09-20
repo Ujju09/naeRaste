@@ -23,12 +23,21 @@ const Home: NextPage = () => {
   
   return (
     <div className={styles.container}>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DGC187B0GF" id='1'></Script>
+<Script id='2'>
+  {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DGC187B0GF')`};
+</Script>
       <Head>
         <title>nae raste</title>
         <meta name="description" content="Superpowered notebooks" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
       </Head>
       <main className={styles.main}>
         <div className={styles.nav}>
