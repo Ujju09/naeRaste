@@ -38,6 +38,7 @@ const Home: NextPage = () => {
   }}();`}
 
 </Script>
+<Script async data-uid="963f67a16a" src="https://artisanal-producer-6695.ck.page/963f67a16a/index.js"></Script>
       <Head>
         <title>nae raste</title>
         <meta name="description" content="Superpowered notebooks" />
@@ -129,7 +130,6 @@ const Home: NextPage = () => {
             
           </ul>
         </div>
-        <Script async data-uid="b3ea752d78" src="https://artisanal-producer-6695.ck.page/b3ea752d78/index.js"></Script>
       </footer>
      
     </div>
