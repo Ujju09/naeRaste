@@ -107,7 +107,6 @@ const Home: NextPage = () => {
           </p>
         </div>
         </div>
-        <Script async data-uid="963f67a16a" src="https://artisanal-producer-6695.ck.page/963f67a16a/index.js"></Script>
       </main>
       <footer className={styles.footer}>
         <div className={styles.footerdiv}>
@@ -119,7 +118,7 @@ const Home: NextPage = () => {
 
             </li>
             <li>
-              © nae raste {new Date().getFullYear()}
+              ©{new Date().getFullYear()} nae raste 
             </li>
             <li>
             <a href="https://m.youtube.com/channel/UCGypumUZB0u4Q7Rno87DpZw/featured">
