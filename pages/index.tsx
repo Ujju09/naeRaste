@@ -49,7 +49,7 @@ const Home: NextPage = () => {
 <meta name="language" content="en-US"/>
 <meta name="revisit-after" content="7 days"/>
 <meta name="geo.region" content="US"/>
-<meta name="geo.placename" content="New York"/>
+<meta name="geo.placename" content="Ranchi, Jharkhand"/>
 <meta name="rating" content="general"/>
 <meta name="distribution" content="global"/>
 <meta name="generator" content="Naeraste"/>
