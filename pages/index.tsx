@@ -41,6 +41,39 @@ const Home: NextPage = () => {
       <Head>
         <title>nae raste</title>
         <meta name="description" content="Superpowered notebooks" />
+        <meta name="keywords" content="learning resources, education, technology, students, learning, better grades, academic success"/>
+<meta name="description" content="Naeraste curates the best learning resources and technology to help students achieve academic success and improve their grades."/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="Naeraste"/>
+<meta name="copyright" content="Naeraste.com"/>
+<meta name="language" content="en-US"/>
+<meta name="revisit-after" content="7 days"/>
+<meta name="geo.region" content="US"/>
+<meta name="geo.placename" content="New York"/>
+<meta name="rating" content="general"/>
+<meta name="distribution" content="global"/>
+<meta name="generator" content="Naeraste"/>
+<meta name="classification" content="education, technology"/>
+<meta name="coverage" content="Worldwide"/>
+<meta name="resource-type" content="document"/>
+<meta name="copyright" content="Naeraste"/>
+<meta name="dc.language" content="en-US"/>
+<meta name="dc.rights" content="Naeraste"/>
+<meta name="dc.publisher" content="Naeraste"/>
+<meta name="dc.title" content="Naeraste: The Best Learning Resources and Technology for Students"/>
+<meta name="dc.subject" content="education, technology, learning resources, students"/>
+<meta name="dc.description" content="Naeraste curates the best learning resources and technology to help students achieve academic success and improve their grades."/>
+<meta name="dc.identifier" content="https://naeraste.com"/>
+<meta name="dc.relation" content="https://naeraste.com"/>
+<meta name="dc.format" content="text/html"/>
+<meta name="dc.coverage" content="Worldwide"/>
+<meta name="dc.contributor" content="Naeraste"/>
+<meta name="dc.creator" content="Naeraste"/>
+<meta name="dc.type" content="text/html"></meta>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Naeraste - Curated Learning Resources and Technology"/>
+<meta name="twitter:description" content="Stay on the cutting edge of education and technology with Naeraste. We curate the best learning resources and technology from around the world."></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
