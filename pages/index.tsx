@@ -112,7 +112,7 @@ const Home: NextPage = () => {
             Designed for Action
           </h2>
           <p>
-          Every piece of informtion is put carefully. They are there to inform and inspire you about science and technology tools that you could use to improve, manage, test and share your learning.
+          Every piece of information is put carefully. They are there to inform and inspire you about science and technology tools that you could use to improve, manage, test and share your learning.
           </p>
           <Image src={`/dfaction.png`} width={369} height={218} alt="Designed for Action" />
 
