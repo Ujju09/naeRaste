@@ -70,6 +70,11 @@ const Home: NextPage = () => {
 <meta name="dc.contributor" content="Naeraste"/>
 <meta name="dc.creator" content="Naeraste"/>
 <meta name="dc.type" content="text/html"></meta>
+<meta property="og:image" content="/icon-512-maskable.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:alt" content="Naeraste logo"></meta>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Naeraste - Curated Learning Resources and Technology"/>
