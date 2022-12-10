@@ -81,6 +81,25 @@
   background: #2F80FA;
 }
 
+.button_outlined{
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: start;
+  align-items: flex-start;
+  border-radius: 0.625rem;
+  padding: 0.675rem 1.25rem 0.8rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+  border: 0.1rem solid;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 200ms ease 0s, background 200ms ease 0s;
+  text-align: center;
+  border-color: #2F80FA;
+}
 
 
 
@@ -170,8 +189,6 @@
       
 
          
-
-
 
 
 
