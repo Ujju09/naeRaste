@@ -77,10 +77,6 @@ const Home: NextPage = () => {
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:type" content="image/png"/>
 <meta property="og:image:alt" content="Naeraste logo"></meta>
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Naeraste - Curated Learning Resources and Technology"/>
-<meta name="twitter:description" content="Stay on the cutting edge of education and technology with Naeraste. We curate the best learning resources and technology from around the world."></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
@@ -144,9 +140,12 @@ const Home: NextPage = () => {
           <p>
             When you use our notebooks to study. We make sure that you can access those notes later on by digitising them for you. This will help you save time and effort when preparing for competitive exams. 
           </p>
+          <Link href={'/for-college'}>
           <button className={styles.button_outlined}>
             Learn more
           </button>
+          </Link>
+          
         </div>
         </div>
       </main>
